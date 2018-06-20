@@ -1,0 +1,14 @@
+.picture-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+img {
+    width: 40vw;
+}
+
