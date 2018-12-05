@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.video-container {
+    align-items: center;
+}
+
 h1 {
     font-family: 'Pacifico', cursive;
     font-weight: 900
@@ -12,4 +16,3 @@ h1 {
 img {
     width: 50vw;
 }
-
