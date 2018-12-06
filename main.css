@@ -1,17 +1,29 @@
-html {
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 
 .bg1 {
-    background: url(wedding_bg.jpg) no-repeat center center fixed;
-}
+    margin: 0;
+    padding: 0;
+    background-image: url('wedding_bg.jpg');
+    background-size:100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;}
 
 .bg2 {
-    background: url(wedd1.jpeg) no-repeat center center fixed;
+    margin: 0;
+    padding: 0;
+    background-image: url('wedd1.jpeg');
+    background-size:100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .picture-container {
@@ -26,20 +38,6 @@ html {
     align-items: center;
 }
 
-/*
-body{
-  background-color: white;
-  background-image: url("wedding_bg.jpg"); 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-    position:scroll;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-}*/
-
 
 h1 {
     font-family: 'Pacifico', cursive;
@@ -49,3 +47,4 @@ h1 {
 img {
     width: 30%;
 }
+
