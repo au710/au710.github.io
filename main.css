@@ -1,3 +1,19 @@
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.bg1 {
+    background: url(wedding_bg.jpg) no-repeat center center fixed;
+}
+
+.bg2 {
+    background: url(wedd1.jpeg) no-repeat center center fixed;
+}
+
 .picture-container {
     display: flex;
     flex-direction: column;
@@ -5,31 +21,25 @@
 }
 
 .video-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-body {
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-
+/*
+body{
   background-color: white;
   background-image: url("wedding_bg.jpg"); 
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-html {
-    position:fixed;
+    position:scroll;
     top:0;
     bottom:0;
     left:0;
     right:0;
-}
+}*/
+
 
 h1 {
     font-family: 'Pacifico', cursive;
