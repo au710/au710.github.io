@@ -26,6 +26,25 @@ html,body {
     background-repeat: no-repeat;
 }
 
+.bg3 {
+    margin: 0;
+    padding: 0;
+    opacity: .1;
+    background-image: url('us1.jpg');
+    background-size:50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.bg3::after {
+  content: "";
+  background: url(us1.jpg);
+  opacity: 0.5;
+  background-size:50% 50%;  position: absolute;
+  z-index: -1;   
+}
+
+
 .picture-container {
     display: flex;
     flex-direction: column;
@@ -47,6 +66,11 @@ h1 {
 
 img {
     width: 30%;
+    border:0;
+    align: "middle";
 }
 
-
+img:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
