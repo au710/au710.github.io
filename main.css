@@ -42,6 +42,7 @@ html,body {
 h1 {
     font-family: 'Pacifico', cursive;
     font-weight: 900
+    text-align:center;
 }
 
 img {
