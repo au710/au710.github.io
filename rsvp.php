@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+
 <html class="bg2">
     <head>
             <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -12,21 +13,30 @@
         <div class="picture-container">
             <br>
             <h1 class="customfont1">Civil Wedding</h1>
-            <h1 class="customfont2">13 April 2019</h1>
+            <h1 class="customfont1">13 April 2019</h1>
             <!--add submit bar here--->
-            <form action="/action_page.php">
+            <form method="post">
                  Name:<br>
                  <input type="text" name="name" ><br>
                   Party Size:<br>
-               <input type="text" name="number" ><br><br>
+               <input type="text" name="party" ><br><br>
+                  Dietary requirements:<br>
+               <input type="text" name="requirements" ><br><br>
                <input type="submit" value="Submit">
             </form>
             <!-- Display the countdown timer in an element -->
-            <h1  class="customfont2" id="demo"></h1>
+            <h1  class="customfont1" id="demo"></h1>
         </div>
       <!---  <div class="powr-countdown-timer" id="13618442_1544144794"></div> -->
     </body>
 
+<?php
+if( isset($_POST['name'] ) && isset( $_POST['party'] ) && isset($_POST['requirements']) )
+{
+    $txt= $_POST['name'].' - '.$_POST['party'].' - '.$_POST['requirements'] . PHP_EOL; 
+    file_put_contents('fields.txt', $txt, FILE_APPEND);
+}
+?>
 
 </html>
 
