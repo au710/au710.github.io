@@ -8,49 +8,23 @@
         <meta http-equiv="content-type" content="text/php; charset=utf-8" />
         <title>Aran Weds Raj</title>
     </head>
+
     <body>
+      <header>
+        <img src = "images/head_image.png"/>
+        <h1>Aran Weds Raj</h1>
+      </header>
+      <main>
         <div class="picture-container">
             <img src = "images/us1.jpg"     width= "200vw"/>
             <h1  class="customfont1"> "You're the tall kingdom I surround </h2>
-            <h1  class="customfont1"> Think I'd better follow you around</h2>
+            <h1  class="customfont1"> Think I'd better follow you around </h2>
             <h1  class="customfont1"> You might need me more</h2>
             <h1  class="customfont1"> Than you think you will" </h2>
             <img src = "images/image1.png"   width= "200vw"/>
         </div>
+      </main>
     </body>
 
 
 </html>
-
-<script src="//www.powr.io/powr.js?external-type=html"></script> 
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("June 2, 2019 09:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
