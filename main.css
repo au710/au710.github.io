@@ -74,17 +74,18 @@ html,body {
 /* from below is font shit */
 
 @font-face{
-    font-family: "Darleston";
-    src: url(fonts/Darleston.ttf) format("truetype");
+    font-family: "English 111 Vivace BT";
+    src: url(fonts/vivace-bt.ttf) format("truetype");
 }
 
 @font-face{
-    font-family: "WY";
-    src: url(fonts/WildYouth.ttf) format("truetype");
+    font-family: "Futura-med";
+    src: url(fonts/Futura-Medium.ttf) format("truetype");
 }
 
 h1.customfont1 {
-    font-family: "Darleston", cursive;
+    font-family: 'English 111 Vivace BT', Arial, sans-serif;
+    font-size: 40px;
     font-weight: 900
     font-size: 2em
     text-align:center;
@@ -92,8 +93,12 @@ h1.customfont1 {
 
 
 h1.customfont2 {
-    font-family: "WY", cursive;
-    font-weight: 900
+    font-family: "Futura-med", Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
     font-size: 2em
     text-align:center;
 }
