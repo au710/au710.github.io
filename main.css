@@ -111,3 +111,5 @@ h1.customfont2 {
     text-align:center;
     letter-spacing: 2px;
 }
+
+@media screen and (min-width: 768px){.rwd-break { display: none; }}
